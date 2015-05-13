@@ -4,10 +4,28 @@ import time
 
 import colors as c
 
-
-count = 1
+seconds = 0
+hundredths = 0
+minutes = 0
+hours = 0
 
 while True:
-    time.sleep(1)
-    print(c.random_color() +str (count) +  ' more second')
-    count += 2
+    time.sleep(0.01)
+    print(c.clear + c.cyan +'[control-C to stop]'+c.reset)
+    print(hundredths)
+    print(seconds)
+    print(minutes)
+    print(hours)
+    hundredths += 1
+    if hundredths == 100:
+        seconds += 1
+        hundredths = 0
+    if seconds == 60:
+        minutes += 1
+        seconds = 0
+       
+    if minutes == 60:
+        hours += 1
+        minutes = 0
+
+
