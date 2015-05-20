@@ -4,7 +4,6 @@ import time
 import colors as c
 print(c.clear)
 
-while True:
 snake = '''
   .-')        .-') _    ('-.    .-. .-')     ('-.   
  ( OO ).     ( OO ) )  ( OO ).-.\  ( OO )  _(  OO)  
@@ -18,15 +17,17 @@ snake = '''
 '''
 
 
-for count in range(5):
-    for badger in range (12):
-        print(c.red + "badgers!")
-        time.sleep(0.4)
+while True:
 
-    for mushroom in range(2):
-        print("mushroom")
-        time.sleep(0.8)
+    for count in range(5):
 
-print(c.red + snake)
-time.sleep(0.120)
+        for badger in range (12):
+            print(c.red + "badgers!")
+            time.sleep(0.4)
+        for mushroom in range(2):
+            print("mushroom")
+            time.sleep(0.8)
+
+    print(c.red + snake)
+    time.sleep(0.120)
 
