@@ -24,6 +24,7 @@ while True:
         for badger in range (12):
             print(c.red + "badgers!")
             time.sleep(0.4)
+
         for mushroom in range(2):
             print("mushroom")
             time.sleep(0.8)
@@ -31,3 +32,5 @@ while True:
     print(c.red + snake)
     time.sleep(0.120)
 
+
+    print(c.clear)
