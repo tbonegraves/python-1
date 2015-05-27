@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+import colors as c
+
+print(c.red + "hello" +   c.green + ' world')
+

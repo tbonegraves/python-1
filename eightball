@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random 
+
+print(c.red +'''
+welcome to magic eight ball!
+enter your qesstin below
+'''+c.reset)
+
+answer=[
+    'yes.',
+    'no.',
+    'maybe.',
+    'shut up',
+    'mortal kombat',
+    'avgn whach him',
+    'sing a song',
+    'fat butt',
+    'huge me',
+    'markipeler',
+    'lugenut',
+    'stop it',
+    'ok goodbye',
+    'im dead',
+    'have fun',
+    'stupid head',
+    'im dumb',
+    'im done',
+    'fnaf',
+    'bye',
+]
+
+while True:
+    question = input('--> '+ c.yellow)
+    answer = random.choice(answer)
+    print(c.random_color() + answer + c.reset)
+
+
