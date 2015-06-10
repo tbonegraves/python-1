@@ -4,18 +4,43 @@ print(c.red + c.clear + '''
 who would cross the bridges of death
 must answer me these three questions
 ''') 
+def prompt(qustion):
+    print(c.red + qustion + c.reset)
+    answer = input('>' + c.base3).lower().strip()
+    print(c.reset)
+    return answer
 
+def live():
+    print('die im joking sorry')
 
+def die():
+    print('look at this deadly bunny NOW DIE!!!!!!')        
 
-print("what is name")
-name = input('>')
+name = prompt("what is name")
+quest = prompt("what is quest")
 
-
-print("what is quest")
-quest = input('>')
 
 
 if name == 'tristan' or name == 'david':
+    color = prompt("what is you favorite color")
+    if color == 'red':
+         print("right go now but kill the bunny")
+    else:
+        print("die by my mom")
+elif name == 'robin':
+    capital = prompt('what is the capital of assyria')
+    if capital in ['assur','ashur']:
+            live()
+        else:
+            die()
 
-    print("what is you favorite color")
-    color = input('>')
+elif name == 'arthur':
+    speed = prompt('What is the air speed velocity of an unladen swallow?')
+    if speed == '24mph':
+        live()
+    elif 'african or european' in speed:
+        print('no!!!')
+        live()
+    else:
+        die()
+
