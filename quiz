@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+
+print(c.clear + c.magenta + '''welcome
+to the pink fluffy unicorns quiz.
+
+let's test your knowlege...''')
+
+def q1():
+    colors = ask("what color are the unicorns?")
+    if answer == "pink":
+    return True
+    return False
+
+def q2():
+    answer = ask("what are the uncorns danceing on?")
+    if answer == rainbow
+    return true
+    return False
+def q3():    
+    answer = ask("what are ther fur made of?")
+    answer == smile
+    return True
+    return False
+
+
