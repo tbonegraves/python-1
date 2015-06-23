@@ -10,19 +10,20 @@ let's test your knowlege...''')
 
 def q1():
     colors = ask("what color are the unicorns?")
-    if answer == "pink":
-    return True
+    if answer == 'pink':
+        return True
     return False
 
 def q2():
     answer = ask("what are the uncorns danceing on?")
-    if answer == rainbow
-    return true
+    if answer == 'rainbow':
+        return True
     return False
+
 def q3():    
-    answer = ask("what are ther fur made of?")
-    answer == smile
-    return True
+   answer = ask("what are ther fur made of?")
+   if  answer == 'smile':
+         return true
     return False
 
 
