@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import colors as c 
+from utils import ask
+print(c.clear + c.red + """welcome to mad libs""")
+
+text = '''
+This is how {person} died. {super_villian} plans to relese a {noun2} of fearful
+{cute_thing} {noun1} plan {noun1} to {blank1} you meet up with {person2}.''' 
+
+words = {
+    "person" : {},
+    "super_villian" :{},
+    "noun2" : {},
+    "cute_thing" : {},
+    "noun1" : {},
+    "blank1": {},
+    "person2":{} 
+}
+
+answers = {}
+
+for key in words:
+    answer = ask("enter" + key)
+     
