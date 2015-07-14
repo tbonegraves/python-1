@@ -3,22 +3,21 @@ import colors as c
 from utils import ask
 print(c.clear + c.red + """welcome to mad libs""")
 
-text = '''
-This is how {person} died. {super_villian} plans to relese a {noun2} of fearful
-{cute_thing} {noun1} plan {noun1} to {blank1} you meet up with {person2}.''' 
+text = '''run!
+This is how {person} died. {supervillian} plans to relese a {noun2} of fearful
+{cutething} {noun1} plan {noun1} to {blank1} you meet up with {person2}.''' 
 
 words = {
-    "person" : {},
-    "super_villian" :{},
-    "noun2" : {},
-    "cute_thing" : {},
-    "noun1" : {},
-    "blank1": {},
-    "person2":{} 
+    "person" : None,
+    "supervillian" :None,
+    "noun2" : None,
+    "cutething" : None,
+    "noun1" : None,
+    "blank1": None,
+    "person2": None, 
 }
 
-answers = {}
+for keyword in words:
+    words[keyword] = ask(keyword.retrip('0123456789') + ':')
 
-for key in words:
-    answer = ask("enter" + key)
-     
+print(c.clear + text.format(**words))
