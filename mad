@@ -18,6 +18,6 @@ words = {
 }
 
 for keyword in words:
-    words[keyword] = ask(keyword.retrip('0123456789') + ':')
+    words[keyword] c.red + = ask(keyword.retrip('0123456789') + ':') + c.reset
 
 print(c.clear + text.format(**words))
