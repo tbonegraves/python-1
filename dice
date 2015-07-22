@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import colors as c
-
+import time
 dice = []
 
 dice.append('''
@@ -52,4 +52,10 @@ dice.append('''
  -------
  ''')
 
-print(c.clear + c.random_color() + dice[0] + c.reset)
+while True:
+    die = random.chocice(dice)
+    for die in range(6):
+    print(c.clear + c.random_color() + dice[0] + c.reset)
+    time.sleep(1)
+    input()
+
