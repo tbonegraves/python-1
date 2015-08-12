@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
-
-print("do you like waffles")
-
+print("do you like waffles") 
 answer = input('>') 
+if answer == 'yes':
+    print("good")
+else:
+    print("die")
+print("do you like French toast")
+
+if answer == 'yes':
+    print("good for you")
+else:
+    print("put him in the pit")
+
 
 
